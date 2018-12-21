@@ -16,6 +16,8 @@ public class Cliente {
     private Sexo sexo;
     private Endereco endereco;
     Set<Telefone> telefone = new HashSet<>();
+    
+    
 
     public Endereco getEndereco() {
         return endereco;

@@ -19,6 +19,7 @@ public class Endereco {
     private String logradouro;       
     private String numero;
     private String bairo;
+    private Cidade cidade;
 
     public Endereco(Integer id, String logradouro, String numero, String bairo) {
         this.id = id;
