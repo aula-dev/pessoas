@@ -1,5 +1,9 @@
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -15,6 +19,7 @@ public class Estado {
     
     private Integer id;
     private String nome;
+    List<Cidade> cidade = new ArrayList<>();
 
     public Estado(Integer id, String nome) {
         this.id = id;
@@ -37,11 +42,20 @@ public class Estado {
         this.nome = nome;
     }
 
+    public List<Cidade> getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(List<Cidade> cidade) {
+        this.cidade = cidade;
+    }
+
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 47 * hash + Objects.hashCode(this.id);
-        hash = 47 * hash + Objects.hashCode(this.nome);
+        hash = 53 * hash + Objects.hashCode(this.id);
+        hash = 53 * hash + Objects.hashCode(this.nome);
+        hash = 53 * hash + Objects.hashCode(this.cidade);
         return hash;
     }
 
@@ -63,8 +77,16 @@ public class Estado {
         if (!Objects.equals(this.id, other.id)) {
             return false;
         }
+        if (!Objects.equals(this.cidade, other.cidade)) {
+            return false;
+        }
         return true;
     }
+    
+    
+    
+      
+    
     
     
     
