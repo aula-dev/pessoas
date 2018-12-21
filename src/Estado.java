@@ -11,18 +11,14 @@ import java.util.Objects;
  *
  * @author Aluno
  */
-public class Cidade {
+public class Estado {
+    
     private Integer id;
     private String nome;
 
-    public Cidade(Integer id, String nome) {
+    public Estado(Integer id, String nome) {
         this.id = id;
         this.nome = nome;
-    }
-
-    public Cidade() {
-        
-        
     }
 
     public Integer getId() {
@@ -60,7 +56,7 @@ public class Cidade {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Cidade other = (Cidade) obj;
+        final Estado other = (Estado) obj;
         if (!Objects.equals(this.nome, other.nome)) {
             return false;
         }
@@ -69,8 +65,6 @@ public class Cidade {
         }
         return true;
     }
-    
-    
     
     
     
