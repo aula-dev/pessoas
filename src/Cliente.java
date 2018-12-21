@@ -1,5 +1,7 @@
 
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 
 /**
@@ -13,6 +15,7 @@ public class Cliente {
     private Integer idade;
     private Sexo sexo;
     private Endereco endereco;
+    Set<Telefone> telefone = new HashSet<>();
 
     public Endereco getEndereco() {
         return endereco;
