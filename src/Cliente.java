@@ -15,6 +15,8 @@ public class Cliente {
     private Integer idade;
     private Sexo sexo;
     private Endereco endereco;
+    
+    // Faltaram os métodos acessores para o atributo telefone.
     Set<Telefone> telefone = new HashSet<>();
     
     
