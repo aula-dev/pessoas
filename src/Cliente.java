@@ -12,6 +12,16 @@ public class Cliente {
     private String nome;       
     private Integer idade;
     private Sexo sexo;
+    private Endereco endereco;
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+    
     
 
     public Sexo getSexo() {
