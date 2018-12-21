@@ -21,6 +21,14 @@ public class Endereco {
     private String bairo;
     private Cidade cidade;
 
+    public Cidade getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(Cidade cidade) {
+        this.cidade = cidade;
+    }
+
     public Endereco(Integer id, String logradouro, String numero, String bairo) {
         this.id = id;
         this.logradouro = logradouro;

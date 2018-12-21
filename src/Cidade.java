@@ -14,6 +14,7 @@ import java.util.Objects;
 public class Cidade {
     private Integer id;
     private String nome;
+    private Estado estado;
 
     public Cidade(Integer id, String nome) {
         this.id = id;
