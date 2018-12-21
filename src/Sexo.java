@@ -5,11 +5,11 @@
  */
 public class Sexo {
     
-    private String sexo;
+    private int MASCULINO;
+    private int FEMININO;
 
-    public Sexo(String sexo) {
-        this.sexo = sexo;
-    }
+    
+    
     
     
     

@@ -13,6 +13,19 @@ public class Cliente {
     private Integer idade;
     private Sexo sexo;
 
+    public Sexo getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(Sexo sexo) {
+        this.sexo = sexo;
+    }
+
+    public Cliente(Sexo sexo) {
+        this.sexo = sexo;
+    }
+    
+    
     public Cliente(Integer id, String nome, Integer idade) {
         this.id = id;
         this.nome = nome;
