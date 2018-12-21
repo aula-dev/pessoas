@@ -12,6 +12,7 @@ public class Cliente {
     private String nome;       
     private Integer idade;
     private Sexo sexo;
+    
 
     public Sexo getSexo() {
         return sexo;
